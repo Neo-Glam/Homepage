@@ -140,7 +140,7 @@ grid-auto-flow: column;
 }
 
 .aboutMe > div > div > h2 {
-  justify-self: center;
+  text-align: center;
 }
 
 .aboutMe > div > div > p:last-of-type {
@@ -178,7 +178,7 @@ margin-bottom: 2vh;
 }
 
 .myWork > h2 {
-  justify-self: center;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -193,7 +193,7 @@ margin-bottom: 2vh;
 }
 
 .contactMe>div>h2{
-  justify-self: center;
+  text-align: center;
   color: whitesmoke;
 }
 
