@@ -102,6 +102,13 @@ h6 {
   font-family: "DM Serif Text", "Roboto Condensed", serif;
 }
 
+body{
+  --main-color: #dad7cd;
+  --second-color:#588157;
+background-color: var(--main-color);
+}
+
+
 .main {
   display: grid;
 grid-auto-flow: column;
