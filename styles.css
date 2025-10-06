@@ -17,9 +17,6 @@
   font-style: italic;
 }
 
-
-
-
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -101,36 +98,48 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    font-family: "DM Serif Text","Roboto Condensed", serif;;
+h6 {
+  font-family: "DM Serif Text", "Roboto Condensed", serif;
 }
 
 .main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 5px;
-    font-family: "Roboto Condensed", sans-serif;
-    margin: 2vh;
+  display: grid;
+grid-auto-flow: column;
+  gap: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 2vh;
 }
-    
+
 .aboutMe {
-    grid-column: span 3 / span 3;
-    border: solid;
+}
+
+.aboutMe > div > div > h2 {
+  justify-self: center;
 }
 
 .myWork {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-    grid-row-start: 2;
-    border: solid;
+  grid-row-start: 2;
+}
 
+.myWork > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,300px);
+  gap: 10px;
+}
+
+.myWork > div > div {
+  max-width: 300px;
+  -webkit-box-shadow: 2px 2px 9px 2px #000000; 
+box-shadow: 2px 2px 9px 2px #000000;
+padding: 10px;
+}
+
+.myWork > h2 {
+  justify-self: center;
+  margin-bottom: 10px;
 }
 
 .contactMe {
-    grid-column: span 3 / span 3;
-    grid-row-start: 5;
-    border: solid;
-
+  grid-row-start: 5;
+  border: solid;
 }
-        
