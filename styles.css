@@ -104,24 +104,40 @@ h6 {
 
 body{
   --main-color: #dad7cd;
-  --second-color:#588157;
+  --second-color:#3a5a40;
 background-color: var(--main-color);
 }
 
+a{
+  color: #000000;
+}
 
 .main {
   display: grid;
 grid-auto-flow: column;
   gap: 5px;
   font-family: "Roboto Condensed", sans-serif;
-  margin: 2vh;
 }
 
 .aboutMe {
+  padding: 2vh;
+}
+
+.aboutMe>div>h1{
+  color: whitesmoke;
+  position: absolute;
+  transform: translate(2vh,-100%);;
+  
 }
 
 .aboutMe > div > div > h2 {
   justify-self: center;
+}
+
+.aboutMe > div > div > p:last-of-type {
+  text-align: center;
+  font-size: x-large;
+  color: #000000;
 }
 
 .myWork {
@@ -140,6 +156,15 @@ grid-auto-flow: column;
   -webkit-box-shadow: 2px 2px 9px 2px #000000; 
 box-shadow: 2px 2px 9px 2px #000000;
 padding: 10px;
+background-color: whitesmoke;
+}
+
+.myWork > div > div>div>div{
+  display: grid;
+  grid-auto-flow: column;
+}
+.myWork > div > div>div>div>p{
+  text-align: end;
 }
 
 .myWork > h2 {
@@ -148,14 +173,28 @@ padding: 10px;
 }
 
 .contactMe {
+  background-color: var(--second-color);
+  background-clip: content-box;
   grid-row-start: 5;
+}
+
+.contactMe>div{
+  padding: 2vh;
 }
 
 .contactMe>div>h2{
   justify-self: center;
+  color: whitesmoke;
 }
 
 .contactMe>div>p:first-of-type{
  font-weight: bold;
 }
 
+.contactMe>div>p{
+  color: whitesmoke;
+}
+.contactMe>div>p:last-of-type{
+  font-size: x-large;
+  text-align: center;
+}
