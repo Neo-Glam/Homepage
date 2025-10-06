@@ -125,6 +125,7 @@ grid-auto-flow: column;
   display: grid;
   grid-template-columns: repeat(auto-fit,300px);
   gap: 10px;
+  justify-content: center;
 }
 
 .myWork > div > div {
@@ -141,5 +142,13 @@ padding: 10px;
 
 .contactMe {
   grid-row-start: 5;
-  border: solid;
 }
+
+.contactMe>div>h2{
+  justify-self: center;
+}
+
+.contactMe>div>p:first-of-type{
+ font-weight: bold;
+}
+
