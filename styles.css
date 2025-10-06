@@ -105,9 +105,18 @@ h6 {
 body{
   --main-color: #dad7cd;
   --second-color:#3a5a40;
-background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
+
+body>div:first-of-type{
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  background-color: var(--second-color);
+}
 a{
   color: #000000;
 }
@@ -157,6 +166,7 @@ grid-auto-flow: column;
 box-shadow: 2px 2px 9px 2px #000000;
 padding: 10px;
 background-color: whitesmoke;
+margin-bottom: 2vh;
 }
 
 .myWork > div > div>div>div{
