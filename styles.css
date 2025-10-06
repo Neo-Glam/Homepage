@@ -109,17 +109,12 @@ body{
 }
 
 
-body>div:first-of-type{
-  height: 30%;
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  z-index: -1;
-  background-color: var(--second-color);
-}
+
 a{
   color: #000000;
 }
+
+
 
 .main {
   display: grid;
@@ -130,6 +125,18 @@ grid-auto-flow: column;
 
 .aboutMe {
   padding: 2vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.cube{
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  z-index: -1;
+  transform-origin: center;
+  transform: rotate(65deg);
+  top: -140vh;
 }
 
 .aboutMe>div>h1{
