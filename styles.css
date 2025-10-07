@@ -102,23 +102,19 @@ h6 {
   font-family: "DM Serif Text", "Roboto Condensed", serif;
 }
 
-body{
+body {
   --main-color: #dad7cd;
-  --second-color:#3a5a40;
+  --second-color: #3a5a40;
   background-color: var(--main-color);
 }
 
-
-
-a{
+a {
   color: #000000;
 }
 
-
-
 .main {
   display: grid;
-grid-auto-flow: column;
+  grid-auto-flow: column;
   gap: 5px;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -129,25 +125,67 @@ grid-auto-flow: column;
   overflow: hidden;
 }
 
-.cube{
+.cube {
   width: 2000px;
   height: 2000px;
   position: absolute;
   z-index: -1;
   transform-origin: center;
-  transform: rotate(65deg);
+  transform: rotate(70deg);
   top: -140vh;
+    @media (min-width: 425px) {
+      top: -100vh;
+  }
 }
 
-.aboutMe>div>h1{
+.photoPrincipale {
+  @media (min-width: 425px) {
+    max-width: 300px;
+    float: left;
+    margin-right: 2vh;
+  }
+}
+
+.aboutMe > div > h1 {
   color: whitesmoke;
   position: absolute;
-  transform: translate(2vh,-100%);;
-  
+  transform: translate(2vh, -100%);
+  @media (min-width:424px){
+    top: 9vh;
+    left: -8vh;
+    position: relative;
+    font-size: 5vh;
+    font-weight: 300;
+  }
 }
+
+.aboutMe > div > div{
+  @media (min-width:424px){
+      -webkit-box-shadow: 2px 2px 9px 2px #000000;
+  box-shadow: 2px 2px 9px 2px #000000;
+    position: relative;
+    top: 10px;
+    z-index: -1;
+    padding: 20px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    background-color: var(--main-color);
+  }
+}
+
 
 .aboutMe > div > div > h2 {
   text-align: center;
+  @media (min-width:424px){
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+  }
+}
+
+.aboutMe>div>div>p{
+    @media (min-width:424px){
+    font-size: larger;
+  }
 }
 
 .aboutMe > div > div > p:last-of-type {
@@ -162,25 +200,25 @@ grid-auto-flow: column;
 
 .myWork > div {
   display: grid;
-  grid-template-columns: repeat(auto-fit,300px);
+  grid-template-columns: repeat(auto-fit, 300px);
   gap: 10px;
   justify-content: center;
 }
 
 .myWork > div > div {
   max-width: 300px;
-  -webkit-box-shadow: 2px 2px 9px 2px #000000; 
-box-shadow: 2px 2px 9px 2px #000000;
-padding: 10px;
-background-color: whitesmoke;
-margin-bottom: 2vh;
+  -webkit-box-shadow: 2px 2px 9px 2px #000000;
+  box-shadow: 2px 2px 9px 2px #000000;
+  padding: 10px;
+  background-color: whitesmoke;
+  margin-bottom: 2vh;
 }
 
-.myWork > div > div>div>div{
+.myWork > div > div > div > div {
   display: grid;
   grid-auto-flow: column;
 }
-.myWork > div > div>div>div>p{
+.myWork > div > div > div > div > p {
   text-align: end;
 }
 
@@ -195,23 +233,23 @@ margin-bottom: 2vh;
   grid-row-start: 5;
 }
 
-.contactMe>div{
+.contactMe > div {
   padding: 2vh;
 }
 
-.contactMe>div>h2{
+.contactMe > div > h2 {
   text-align: center;
   color: whitesmoke;
 }
 
-.contactMe>div>p:first-of-type{
- font-weight: bold;
+.contactMe > div > p:first-of-type {
+  font-weight: bold;
 }
 
-.contactMe>div>p{
+.contactMe > div > p {
   color: whitesmoke;
 }
-.contactMe>div>p:last-of-type{
+.contactMe > div > p:last-of-type {
   font-size: x-large;
   text-align: center;
 }
