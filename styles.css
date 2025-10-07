@@ -235,15 +235,27 @@ a {
   background-color: var(--second-color);
   background-clip: content-box;
   grid-row-start: 5;
+    @media (min-width:424px){
+  display: grid;
+  grid-auto-flow: column;
+  }
 }
 
 .contactMe > div {
   padding: 2vh;
+    @media (min-width:424px){
+  display: grid;
+  grid-auto-flow: row;
+  padding-top: 7vh;
+  }
 }
 
 .contactMe > div > h2 {
   text-align: center;
   color: whitesmoke;
+    @media (min-width:424px){
+  text-align: left;
+  }
 }
 
 .contactMe > div > p:first-of-type {
@@ -253,7 +265,25 @@ a {
 .contactMe > div > p {
   color: whitesmoke;
 }
+
+.contactMe > div > div>p{
+  color: whitesmoke;
+}
+
+
+
 .contactMe > div > p:last-of-type {
   font-size: x-large;
   text-align: center;
+  @media (min-width:424px){
+    text-align: left;
+  }  
+}
+
+.contactMe>img{
+      @media (min-width:424px){
+    max-width: 300px;
+    margin: 2vh;
+    margin-bottom: 5vh;
+  }
 }
