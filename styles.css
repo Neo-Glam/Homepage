@@ -133,14 +133,22 @@ a {
   transform-origin: center;
   transform: rotate(70deg);
   top: -140vh;
-    @media (min-width: 425px) {
-      top: -100vh;
+  @media (min-width: 600px) {
+    top: -100vh;
+  }
+  @media (min-width: 1000px) {
+    top: -166vh;
   }
 }
 
 .photoPrincipale {
-  @media (min-width: 425px) {
+  @media (min-width: 600px) {
     max-width: 300px;
+    float: left;
+    margin-right: 2vh;
+  }
+  @media (min-width: 1000px) {
+    max-width: 400px;
     float: left;
     margin-right: 2vh;
   }
@@ -150,19 +158,23 @@ a {
   color: whitesmoke;
   position: absolute;
   transform: translate(2vh, -100%);
-  @media (min-width:424px){
+  @media (min-width: 600px) {
     top: 9vh;
     left: -8vh;
     position: relative;
     font-size: 5vh;
     font-weight: 300;
   }
+  @media (min-width: 1000px) {
+    left: -49vh;
+    top: 68vh;
+  }
 }
 
-.aboutMe > div > div{
-  @media (min-width:424px){
-      -webkit-box-shadow: 2px 2px 9px 2px #000000;
-  box-shadow: 2px 2px 9px 2px #000000;
+.aboutMe > div > div {
+  @media (min-width: 600px) {
+    -webkit-box-shadow: 2px 2px 9px 2px #000000;
+    box-shadow: 2px 2px 9px 2px #000000;
     position: relative;
     top: 10px;
     z-index: -1;
@@ -173,17 +185,16 @@ a {
   }
 }
 
-
 .aboutMe > div > div > h2 {
   text-align: center;
-  @media (min-width:424px){
+  @media (min-width: 600px) {
     margin-top: 5vh;
     margin-bottom: 2vh;
   }
 }
 
-.aboutMe>div>div>p{
-    @media (min-width:424px){
+.aboutMe > div > div > p {
+  @media (min-width: 600px) {
     font-size: larger;
   }
 }
@@ -192,6 +203,9 @@ a {
   text-align: center;
   font-size: x-large;
   color: #000000;
+    @media (min-width: 1000px) {
+    text-align: right;
+  }
 }
 
 .myWork {
@@ -225,7 +239,7 @@ a {
 .myWork > h2 {
   text-align: center;
   margin-bottom: 10px;
-      @media (min-width:424px){
+  @media (min-width: 600px) {
     text-align: left;
     padding-left: 2vh;
   }
@@ -235,26 +249,26 @@ a {
   background-color: var(--second-color);
   background-clip: content-box;
   grid-row-start: 5;
-    @media (min-width:424px){
-  display: grid;
-  grid-auto-flow: column;
+  @media (min-width: 600px) {
+    display: grid;
+    grid-auto-flow: column;
   }
 }
 
 .contactMe > div {
   padding: 2vh;
-    @media (min-width:424px){
-  display: grid;
-  grid-auto-flow: row;
-  padding-top: 7vh;
+  @media (min-width: 600px) {
+    display: grid;
+    grid-auto-flow: row;
+    padding-top: 7vh;
   }
 }
 
 .contactMe > div > h2 {
   text-align: center;
   color: whitesmoke;
-    @media (min-width:424px){
-  text-align: left;
+  @media (min-width: 600px) {
+    text-align: left;
   }
 }
 
@@ -266,24 +280,23 @@ a {
   color: whitesmoke;
 }
 
-.contactMe > div > div>p{
+.contactMe > div > div > p {
   color: whitesmoke;
 }
-
-
 
 .contactMe > div > p:last-of-type {
   font-size: x-large;
   text-align: center;
-  @media (min-width:424px){
+  @media (min-width: 600px) {
     text-align: left;
-  }  
+  }
 }
 
-.contactMe>img{
-      @media (min-width:424px){
+.contactMe > img {
+  @media (min-width: 600px) {
     max-width: 300px;
     margin: 2vh;
     margin-bottom: 5vh;
+    justify-self: end;
   }
 }
