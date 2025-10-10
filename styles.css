@@ -103,9 +103,10 @@ h6 {
 }
 
 body {
-  --main-color: #dad7cd;
+  --main-color: #d9d9d9;
   --second-color: #3a5a40;
   background-color: var(--main-color);
+}
 
 a {
   color: #000000;
@@ -176,7 +177,7 @@ a {
     padding: 20px;
     margin-left: 2vh;
     margin-right: 2vh;
-    background-color: var(--main-color);
+    background-color: whitesmoke;
   }
     @media (min-width: 1000px) {
     margin-top: 6vh;
